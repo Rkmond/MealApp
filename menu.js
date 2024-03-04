@@ -139,6 +139,7 @@ const favCardCont = document.querySelector('#fav-card-container')
 
 
 // combining
+console.log("hello")
 if (window.location.pathname.includes('/')) {
     // Code specific to index.html
     console.log("inside index")
