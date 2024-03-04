@@ -139,7 +139,7 @@ const favCardCont = document.querySelector('#fav-card-container')
 
 
 // combining
-if (window.location.pathname === '/index.html') {
+if (window.location.pathname.includes('/index.html')) {
     // Code specific to index.html
     console.log("inside index")
     if(localStorage.favourites && JSON.parse(localStorage.favourites).length>0){
