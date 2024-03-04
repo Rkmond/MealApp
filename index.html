@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fcb1259be6.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Menu Search Home</title>
+</head>
+<body>
+    <div id="container">
+        <header class="header no-deco">
+            <a href="index.html">
+                <i class="fa-solid fa-kitchen-set"></i>
+                <h1>Menu Search</h1>
+            </a>
+            <button class="home-btn">Home</button>
+        </header>
+        <div id="content">
+            <article class="welcome-text">
+                <h1>Welcome to Menu Search</h1>
+                <p>Search from a wide range of menus in the world</p>
+            </article>
+            <div class="search-wrapper">
+                <label for="search" id="search-label">Search for menus</label><br>
+                <section>
+                    <input type="search" id="search" placeholder="Search Menus">
+                    <i class="fa-solid fa-magnifying-glass" id="searchicon"></i>
+                </section>
+            </div>
+            <p id="searched-heading" class="card-headings">Searched Items</p>
+            <hr>
+            <div class="menu-cards" id="search-cards">
+            </div>
+
+            <div id="fav-head">
+                <p id="favourite-heading" class="card-headings">Favourite Menus</p>
+                <a href="favourites.html" class="no-deco"><button type="button" class="view-all">View All</button></a>
+            </div>
+            <hr>
+            <div class="menu-cards" id="favourite">
+            </div>
+        </div>
+        <footer class="footer">
+            <div>About Us</div>
+            <div>Contact</div>
+            <div>
+                Social:
+            </div>
+        </footer>
+    </div>
+    <template menu-card-template>
+        <a href="menudetails.html" class="card no-deco">
+            <img src="" alt="menu-image" class="menu-img" data-image>
+            <div class="card-name" data-name></div>
+        </a>
+    </template>
+    <script src="menu.js"></script>
+</body>
+</html>

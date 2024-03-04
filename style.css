@@ -1,0 +1,295 @@
+body{
+    margin: 0;
+}
+
+button{
+    cursor: pointer;
+}
+
+#container{
+    background-color: rgb(255, 213, 0);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#content{
+    margin: 0 10%;
+}
+
+.header, .footer{
+    background-color: #4d0c0cec;
+    color: white;
+    display: flex;
+}
+
+.footer{
+    justify-content: space-evenly;
+    height: 3rem;
+    padding: 20px;
+    text-align: center;
+}
+
+.header{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.header a{
+    text-decoration: none;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr{
+    border: 2px solid black;
+}
+
+.no-deco{
+    text-decoration: none;
+}
+
+.header a i{
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.header button{
+    font-weight: 600;
+    height: 2rem;
+    border-radius: 4px;
+}
+
+.header button:hover{
+    background-color: red;
+    color: white;
+}
+
+.welcome-text{
+    font-size: 2rem;
+}
+
+.welcome-text h1{
+    color: red;
+    font-weight: 800;
+}
+
+.search-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.search-wrapper section{
+    height: 1.5rem;
+    width: 45vw;
+    border: 1px solid rgb(82, 74, 235);
+    border-radius: 6px;
+    background-color: white;
+    align-items: center;
+    display: flex;
+}
+
+.search-wrapper label{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#search{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 2px 10px;
+    border-radius: 6px;
+}
+
+.search-wrapper section i{
+    padding: 10px 4px;
+}
+
+
+.card{
+    height: 200px;
+    width: 200px;
+}
+
+.menu-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: .25rem;
+    margin: 30px 0;
+    margin-bottom: 35px;
+}
+
+.menu-img{
+    height: 180px;
+    width: 180px;
+}
+
+.card-name{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2D2013;
+}
+
+.card-headings{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#fav-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -20px;
+}
+
+#favourite-heading{
+    display: inline;
+}
+
+.view-all{
+    display: inline;
+    background-color: #2874F0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 80px;
+    height: 25px;
+    font-family: 16px;
+    font-weight: 600;
+}
+
+/* For Menu Details Page */
+
+#menu-details{
+    display: flex;
+}
+
+#left-div{
+    padding: 20px;
+    width: 290rem;
+}
+
+#right-div{
+    padding: 20px;
+    width: auto;
+}
+
+#menu-det-image{
+    width: 100%;
+}
+
+#ingredients{
+    list-style-type: none;
+    text-align: left;
+}
+
+.innertext{
+    font-family:system-ui;
+    font-weight: 500;
+    color: #170274;
+    font-size: 16px;
+}
+
+.div-heading{
+    font-size: 20px;
+    font-weight: 700;
+    color: #2D2013;
+}
+
+#menu-det-name{
+    color: rgb(228, 5, 5);
+    font-size: 25px;
+    font-weight:bolder;
+    font-family: Arial;
+}
+
+#fav-btn{
+    margin: 10px;
+    width: 80%;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 2px;
+    background-color: #2D2013;
+    color: white;
+}
+
+#fav-btn i{
+    font-family: sans-serif;
+}
+
+#fav-btn:hover{
+    font-size: 15px;
+    background-color: rgb(6, 114, 6);
+}
+
+
+/* Favourite page */
+#fav-card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fav-card{
+    display: flex;
+    padding: 5px;
+    justify-content: space-evenly;
+    width: 90%;
+    height: auto;
+    align-items: center;
+    background-color: #4d0c0cec;
+    margin: 8px 2px;
+    border-radius: 4px;
+    flex-wrap: wrap;
+}
+
+.fav-card:hover{
+    .fav-card-name{
+        color: #2874F0;
+    }
+}
+
+
+.fav-card-name{
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: white
+}
+
+.remove-btn{
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    color: #4d0c0cec;
+    font-weight: 600;
+    border: none;
+    background-color: rgb(255, 213, 0);
+    box-shadow: #2D2013 2px 4px 3px 1px;
+    transition: box-shadow 0.4s ease-in-out, color 0.2s ease-in-out;
+}
+
+.remove-btn:hover{
+    background-color: red;
+    color: white;
+    box-shadow: #2D2013 -2px -2px 4px 0px;
+}
+
+
+
+
+
