@@ -139,7 +139,6 @@ const favCardCont = document.querySelector('#fav-card-container')
 
 
 // combining
-console.log("hello")
 if (searchInput!=null) {
     // Code specific to index.html
     console.log("inside index")
