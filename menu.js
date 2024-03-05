@@ -140,7 +140,7 @@ const favCardCont = document.querySelector('#fav-card-container')
 
 // combining
 console.log("hello")
-if (window.location.pathname.includes('/')) {
+if (searchInput!=null) {
     // Code specific to index.html
     console.log("inside index")
     if(localStorage.favourites && JSON.parse(localStorage.favourites).length>0){
@@ -173,7 +173,7 @@ if (window.location.pathname.includes('/')) {
         searchInput.value = '';
     })
 
-} else if (window.location.pathname === '/menudetails.html') {
+} else if (favBtn!=null) {
     // Code specific to menudetails.html
     console.log("inside details")
     const mname = sessionStorage.mealName;
@@ -183,7 +183,7 @@ if (window.location.pathname.includes('/')) {
         addRemoveFav('add', mname);
         favBtn.textContent = 'Added to Favoutites'
     })
-}else if(window.location.pathname === '/favourites.html'){
+}else if(favCardCont!=null){
     console.log('inside favourite')
     if(localStorage.favourites && JSON.parse(localStorage.favourites).length>0){
         favouriteMeals = JSON.parse(localStorage.favourites)
